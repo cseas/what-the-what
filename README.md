@@ -1,6 +1,6 @@
 # What the What?
 
-Chrome extension for frequently asked questions in your org.
+Chrome extension for frequently asked questions in your org. Install from the Chrome store and press `Ctrl+J` (`Cmd+J` on Mac) to open.
 
 **Features**
 
