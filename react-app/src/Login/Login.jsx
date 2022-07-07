@@ -1,8 +1,6 @@
-import "./App.css";
-
-function App() {
+export function Login() {
   return (
-    <div className="App">
+    <>
       <header className="App-header" style={{ paddingTop: "40px" }}>
         <p className="p-bold-light">Welcome to</p>
 
@@ -43,8 +41,6 @@ function App() {
           style={{ width: "256px", paddingTop: "40px" }}
         />
       </main>
-    </div>
+    </>
   );
 }
-
-export default App;
