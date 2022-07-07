@@ -1,4 +1,15 @@
+import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+
+import "./Login.css";
+
 export function Login() {
+  const focusElement = useRef();
+
+  useEffect(() => {
+    if (focusElement.current) focusElement.current.focus();
+  }, [focusElement]);
+
   return (
     <>
       <header className="App-header" style={{ paddingTop: "40px" }}>
@@ -35,11 +46,13 @@ export function Login() {
           <span className="p-bold-blue">What's for all your Whats</span> here 😉
         </p>
 
-        <img
-          src="/images/home-google.png"
-          alt="Log In With Google"
-          style={{ width: "256px", paddingTop: "40px" }}
-        />
+        <Link ref={focusElement} className="login-image" to="/home">
+          <img
+            src="/images/home-google.png"
+            alt="Log In With Google"
+            style={{ width: "256px", marginTop: "40px" }}
+          />
+        </Link>
       </main>
     </>
   );
