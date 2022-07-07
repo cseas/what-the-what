@@ -1,40 +1,60 @@
 .App {
+  /* background-color: floralwhite; */
   text-align: center;
-  height: 600px;
   width: 420px;
+  min-height: 600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/***********************************
+          CSS Variables
+ ***********************************/
+
+:root {
+  --color-primary: #4200ff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/***********************************
+          Typography
+ ***********************************/
+
+.h1-black {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 39px;
+  color: #3f3f3f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.h1-blue {
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 39px;
+  color: var(--color-primary);
 }
 
-.App-link {
-  color: #61dafb;
+.p-regular {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.p-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: hsla(0, 0%, 0%, 0.9);
+}
+
+.p-bold-light {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: hsla(0, 0%, 0%, 0.5);
+}
+
+.p-bold-blue {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-primary);
 }

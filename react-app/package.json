@@ -14,7 +14,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "build:extension": "npm run build && rm -rf ../static && mv build/static ../static",
+    "build:extension": "npm run build && npm run move:static && npm run move:images",
+    "move:static": "rm -rf ../static && mv build/static ../static",
+    "move:images": "rm -rf ../images && mv build/images ../images",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
