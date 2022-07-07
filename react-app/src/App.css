@@ -1,5 +1,5 @@
 .App {
-  /* background-color: floralwhite; */
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: center;
   width: 420px;
   min-height: 600px;
@@ -28,6 +28,21 @@
   font-weight: 700;
   font-size: 33px;
   line-height: 39px;
+  color: var(--color-primary);
+}
+
+.h2-black {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3f3f3f;
+}
+
+.h2-blue {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3f3f3f;
   color: var(--color-primary);
 }
 
