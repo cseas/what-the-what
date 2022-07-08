@@ -28,7 +28,7 @@ export function Home() {
       <h1 className="h2-blue" style={{ paddingTop: "16px" }}>
         Wh@t <span className="h2-black">the</span> What!
       </h1>
-      <main style={{ padding: "16px 24px 0" }}>
+      <main style={{ padding: "16px 24px 16px" }}>
         <InputGroup>
           <Input
             variant="flushed"
