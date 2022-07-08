@@ -6,7 +6,9 @@ import searchResults from "../api/searchResults.json";
 import { SearchResult } from "./SearchResult";
 
 function filterResults(search, results) {
-  return results.filter(({ problem }) => problem.includes(search));
+  return results.filter(({ problem }) =>
+    problem.toLowerCase().includes(search.toLowerCase())
+  );
 }
 
 export function Home() {
