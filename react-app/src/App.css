@@ -46,6 +46,14 @@
   color: var(--color-primary);
 }
 
+.h3 {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: hsla(0, 0%, 0%, 0.4);
+  text-transform: uppercase;
+}
+
 .p-regular {
   font-weight: 400;
   font-size: 14px;
@@ -72,4 +80,16 @@
   font-size: 14px;
   line-height: 20px;
   color: var(--color-primary);
+}
+
+.span-tag {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  color: hsla(0, 0%, 0%, 0.35);
+
+  background-color: #f4f6fd;
+  border-radius: 22px;
+  padding: 2px 6px;
+  margin-right: 4px;
 }
