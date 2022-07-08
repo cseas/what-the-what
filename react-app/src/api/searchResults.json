@@ -52,6 +52,16 @@
       "answer": "Payment Gateway"
     },
     {
+      "problem": "What's the full form of TOFU?",
+      "tags": ["BU: X", "General"],
+      "answer": "Top of the Funnel; count of users who are at the top of the funnel, typically visiting the website or entering signup funnel."
+    },
+    {
+      "problem": "What's the full form of MOM?",
+      "tags": ["BU: X", "General"],
+      "answer": "Month Over Month; usually in context of numbers, how they have changed month by month."
+    },
+    {
       "problem": "Where can I find Competency Framework for SDEs?",
       "tags": ["BU: X", "General"],
       "answer": "Link to competency framework: <a>https://docs.google.com/document/d/1LaY5yyeY8AbL-s9Ng3zwSoOAlfIW9RrcbmA6lRvoem8/edit#</a>"
