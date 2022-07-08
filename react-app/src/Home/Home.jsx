@@ -35,8 +35,8 @@ export function Home() {
             Un-answered questions ({searchResults.unansweredQuestions.length})
           </h2>
 
-          {searchResults.unansweredQuestions.map(({ problem, tags }) => (
-            <SearchResult problem={problem} tags={tags} />
+          {searchResults.unansweredQuestions.map(({ problem, tags }, index) => (
+            <SearchResult key={index} problem={problem} tags={tags} />
           ))}
         </section>
 
@@ -47,8 +47,13 @@ export function Home() {
           </h2>
 
           {searchResults.latestAnsweredQuestions.map(
-            ({ problem, tags, answer }) => (
-              <SearchResult problem={problem} tags={tags} answer={answer} />
+            ({ problem, tags, answer }, index) => (
+              <SearchResult
+                key={index}
+                problem={problem}
+                tags={tags}
+                answer={answer}
+              />
             )
           )}
         </section>

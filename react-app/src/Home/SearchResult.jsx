@@ -26,7 +26,9 @@ export function SearchResult({ problem, tags, answer = null }) {
       >
         <div>
           {tags.map((tag) => (
-            <span className="span-tag">{tag}</span>
+            <span key={tag} className="span-tag">
+              {tag}
+            </span>
           ))}
         </div>
 
