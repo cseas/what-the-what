@@ -12,7 +12,7 @@ export function SearchResult({ problem, tags, answer = null }) {
         <p
           className="p-regular"
           style={{ color: "hsla(0, 0%, 0%, 0.7)", paddingBottom: "8px" }}
-          dangerouslySetInnerHTML={{ __html: answer }}
+          dangerouslySetInnerHTML={{ __html: answer.content }}
         ></p>
       ) : null}
 

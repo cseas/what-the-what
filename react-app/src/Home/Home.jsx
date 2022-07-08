@@ -28,7 +28,8 @@ export function Home() {
       <h1 className="h2-blue" style={{ paddingTop: "16px" }}>
         Wh@t <span className="h2-black">the</span> What!
       </h1>
-      <main style={{ padding: "16px 24px 16px" }}>
+
+      <main style={{ padding: "16px 24px 0" }}>
         <InputGroup>
           <Input
             variant="flushed"
@@ -37,10 +38,14 @@ export function Home() {
             value={searchInput}
             onChange={handleChange}
             ref={focusElement}
+            style={{
+              fontWeight: 500,
+              fontSize: "14px",
+              lineHeight: "16px",
+            }}
           />
           <InputRightElement children={<SearchIcon color="#B3B7C5" />} />
         </InputGroup>
-
         <section style={{ textAlign: "initial" }}>
           <h2 className="h3" style={{ paddingTop: "24px" }}>
             Un-answered questions (
@@ -58,8 +63,18 @@ export function Home() {
           )}
         </section>
 
-        <section style={{ textAlign: "initial", paddingTop: "16px" }}>
-          <h2 className="h3" style={{ paddingTop: "24px" }}>
+        <hr
+          style={{
+            height: "1px",
+            backgroundColor: "#E3E5EB",
+            width: "100%",
+            marginTop: "26px",
+          }}
+        />
+
+        {/* Latest Answered Questions */}
+        <section style={{ textAlign: "initial", paddingTop: "26px" }}>
+          <h2 className="h3">
             Latest answered questions (
             {
               filterResults(searchInput, searchResults.latestAnsweredQuestions)
@@ -80,7 +95,9 @@ export function Home() {
             />
           ))}
         </section>
+      </main>
 
+      {searchInput.length > 0 ? (
         <footer
           style={{
             backgroundColor: "#EDE6FF",
@@ -88,7 +105,7 @@ export function Home() {
             display: "flex",
             justifyContent: "space-between",
             padding: "12px 16px",
-            marginTop: "24px",
+            margin: "24px 24px 4rem",
           }}
         >
           <p className="p-regular" style={{ fontSize: "12px" }}>
@@ -103,7 +120,14 @@ export function Home() {
             Ask New Question
           </Button>
         </footer>
-      </main>
+      ) : (
+        <footer style={{ marginTop: "24px", backgroundColor: "#EDE6FF" }}>
+          <img src="" alt="" />
+          <p>100 questions | 200 answers | You answered 3 questions</p>
+        </footer>
+      )}
+
+      <hr />
     </>
   );
 }
