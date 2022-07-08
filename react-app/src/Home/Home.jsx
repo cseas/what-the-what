@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
+import { Button, Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
 import searchResults from "../api/searchResults.json";
@@ -80,6 +80,29 @@ export function Home() {
             />
           ))}
         </section>
+
+        <footer
+          style={{
+            backgroundColor: "#EDE6FF",
+            borderRadius: "4px",
+            display: "flex",
+            justifyContent: "space-between",
+            padding: "12px 16px",
+            marginTop: "24px",
+          }}
+        >
+          <p className="p-regular" style={{ fontSize: "12px" }}>
+            Not the question you were looking for?
+          </p>
+          <Button
+            colorScheme="purple"
+            variant="link"
+            size="sm"
+            style={{ cursor: "pointer", fontSize: "12px" }}
+          >
+            Ask New Question
+          </Button>
+        </footer>
       </main>
     </>
   );
