@@ -11,7 +11,7 @@ export function SearchResult({ problem, tags, answer = null }) {
       {answer ? (
         <p
           className="p-regular"
-          style={{ color: "hsla(0, 0%, 0%, 0.7)", paddingBottom: "4px" }}
+          style={{ color: "hsla(0, 0%, 0%, 0.7)", paddingBottom: "8px" }}
           dangerouslySetInnerHTML={{ __html: answer }}
         ></p>
       ) : null}
