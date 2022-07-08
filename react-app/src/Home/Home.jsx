@@ -5,12 +5,15 @@ import { SearchIcon } from "@chakra-ui/icons";
 import searchResults from "../api/searchResults.json";
 import { SearchResult } from "./SearchResult";
 
+function filterResults(search, results) {
+  return results.filter(({ problem }) => problem.includes(search));
+}
+
 export function Home() {
   const [searchInput, setSearchInput] = useState("");
 
   const handleChange = (newInput) => {
     setSearchInput(newInput.currentTarget.value);
-    console.log(newInput.currentTarget.value);
   };
 
   return (
@@ -32,30 +35,42 @@ export function Home() {
 
         <section style={{ textAlign: "initial" }}>
           <h2 className="h3" style={{ paddingTop: "24px" }}>
-            Un-answered questions ({searchResults.unansweredQuestions.length})
+            Un-answered questions (
+            {
+              filterResults(searchInput, searchResults.unansweredQuestions)
+                .length
+            }
+            )
           </h2>
 
-          {searchResults.unansweredQuestions.map(({ problem, tags }, index) => (
-            <SearchResult key={index} problem={problem} tags={tags} />
-          ))}
+          {filterResults(searchInput, searchResults.unansweredQuestions).map(
+            ({ problem, tags }, index) => (
+              <SearchResult key={index} problem={problem} tags={tags} />
+            )
+          )}
         </section>
 
         <section style={{ textAlign: "initial", paddingTop: "16px" }}>
           <h2 className="h3" style={{ paddingTop: "24px" }}>
             Latest answered questions (
-            {searchResults.latestAnsweredQuestions.length})
+            {
+              filterResults(searchInput, searchResults.latestAnsweredQuestions)
+                .length
+            }
+            )
           </h2>
 
-          {searchResults.latestAnsweredQuestions.map(
-            ({ problem, tags, answer }, index) => (
-              <SearchResult
-                key={index}
-                problem={problem}
-                tags={tags}
-                answer={answer}
-              />
-            )
-          )}
+          {filterResults(
+            searchInput,
+            searchResults.latestAnsweredQuestions
+          ).map(({ problem, tags, answer }, index) => (
+            <SearchResult
+              key={index}
+              problem={problem}
+              tags={tags}
+              answer={answer}
+            />
+          ))}
         </section>
       </main>
     </>
