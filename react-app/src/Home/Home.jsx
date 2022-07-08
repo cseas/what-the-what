@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Input, InputGroup, InputRightElement } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 
@@ -11,10 +11,15 @@ function filterResults(search, results) {
 
 export function Home() {
   const [searchInput, setSearchInput] = useState("");
+  const focusElement = useRef();
 
   const handleChange = (newInput) => {
     setSearchInput(newInput.currentTarget.value);
   };
+
+  useEffect(() => {
+    if (focusElement.current) focusElement.current.focus();
+  }, [focusElement]);
 
   return (
     <>
@@ -29,6 +34,7 @@ export function Home() {
             focusBorderColor="#4200FF"
             value={searchInput}
             onChange={handleChange}
+            ref={focusElement}
           />
           <InputRightElement children={<SearchIcon color="#B3B7C5" />} />
         </InputGroup>
