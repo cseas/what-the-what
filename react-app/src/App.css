@@ -61,6 +61,11 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.p-regular > a {
+  cursor: pointer;
+  color: blue;
+}
+
 .p-bold {
   font-weight: 700;
   font-size: 14px;

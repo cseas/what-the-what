@@ -1,24 +1,70 @@
 {
   "unansweredQuestions": [
     {
-      "problem": "What's the full form of MAU?",
+      "problem": "@nemo what's your real name?",
+      "tags": ["Bakar", "General"]
+    },
+    {
+      "problem": "How to declare investments on AcePayXpress?",
+      "tags": ["General"]
+    },
+    {
+      "problem": "Is there a tech spec template?",
+      "tags": ["BU: Platform", "General"]
+    },
+    {
+      "problem": "What is CLTV?",
       "tags": ["BU: X", "General"]
     },
     {
-      "problem": "What's the full form of MAU?",
+      "problem": "What is CAC?",
       "tags": ["BU: X", "General"]
+    },
+    {
+      "problem": "What is SAST?",
+      "tags": ["BU: Platform", "General"]
     }
   ],
   "latestAnsweredQuestions": [
     {
-      "problem": "What's the full form of MAU?",
+      "problem": "What's the full form of MTU?",
       "tags": ["BU: X", "General"],
-      "answer": "Monthly Active Users"
+      "answer": "Monthly transacting Users (Transacted in the last calendar month)."
     },
     {
-      "problem": "What's the full form of MAU?",
+      "problem": "What's the full form of TPV?",
       "tags": ["BU: X", "General"],
-      "answer": "Monthly Active Users"
+      "answer": "Total Payment Volume (TPV = GMV + Payouts), could also mean third party validation."
+    },
+    {
+      "problem": "What's the full form of GMV?",
+      "tags": ["BU: X", "General"],
+      "answer": "Gross Merchandise Value"
+    },
+    {
+      "problem": "What's the full form of CAW?",
+      "tags": ["BU: X", "General"],
+      "answer": "Charge at will"
+    },
+    {
+      "problem": "What's the full form of PG?",
+      "tags": ["BU: X", "General"],
+      "answer": "Payment Gateway"
+    },
+    {
+      "problem": "Where can I find Competency Framework for SDEs?",
+      "tags": ["BU: X", "General"],
+      "answer": "Link to competency framework: <a>https://docs.google.com/document/d/1LaY5yyeY8AbL-s9Ng3zwSoOAlfIW9RrcbmA6lRvoem8/edit#</a>"
+    },
+    {
+      "problem": "What's the contact number for medical emergency?",
+      "tags": ["Medical", "General"],
+      "answer": "Here is the link to Medical Insurance Policy Document: <a>https://alpha.razorpay.com/repo/medical-insurance-2</a>.<br/>In case of emergencies, please contact SPOC: <br />Razorpay: Deeksha - +91 70192 88367 (deeksha.shetty@razorpay.com),<br/>TPA: Vaibhav - 9582537577 (vaibhav_k@emedlife.in)."
+    },
+    {
+      "problem": "How to apply for reimbursements?",
+      "tags": ["Finance", "General"],
+      "answer": "Flexi Reimbursements can be claimed every month on Acepay Xpress. The claim window is open between 1st to 15th of every month. Please raise your query through a Helpdesk ticket on AcepayXpress Portal for further assistance. <a>https://app.acepayxpress.com/HRMS2020/Razorpay/Login.aspx?CID=Razorpay</a>"
     }
   ]
 }
